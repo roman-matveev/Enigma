@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Enigma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="start-screen" class="show">
+        <pre>
+'########:'##::: ##:'####::'######:::'##::::'##::::'###::::
+ ##.....:: ###:: ##:. ##::'##... ##:: ###::'###:::'## ##:::
+ ##::::::: ####: ##:: ##:: ##:::..::: ####'####::'##:. ##::
+ ######::: ## ## ##:: ##:: ##::'####: ## ### ##:'##:::. ##:
+ ##...:::: ##. ####:: ##:: ##::: ##:: ##. #: ##: #########:
+ ##::::::: ##:. ###:: ##:: ##::: ##:: ##:.:: ##: ##.... ##:
+ ########: ##::. ##:'####:. ######::: ##:::: ##: ##:::: ##:
+........::..::::..::....:::......::::..:::::..::..:::::..::
+        </pre>
+
+        <p>Guess the correct password given the list of words.</p>
+        <p>If you guess wrong, a hint with the correct amount of letters will be given.</p>
+
+        <button id="start">Start</button>
+    </div>
+
+    <div id="game-screen" class="hide">
+        <ul id="word-list"></ul>
+        <p>Click on a word to make a guess.</p>
+
+        <p id="guesses-remaining"></p>
+        <p id="winner" class="hide">Congratulations! You win! <a href="./index.html">Play again?</a></p>
+        <p id="loser" class="hide">Sorry, you lost. <a href="./index.html">Play again?</a></p>
+    </div>
+
+    <script src="words.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
